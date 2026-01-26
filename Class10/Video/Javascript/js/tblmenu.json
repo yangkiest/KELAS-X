@@ -1,0 +1,35 @@
+[ 
+{
+
+    "idmenu" : 1,
+    "idkategori" : 1,
+    "menu" : "Anggur",
+    "harga" : 3000,
+    "warna" : ["merah", "kuning", "hijau"],
+    "stok" : true,
+    "keterangan" : null
+
+},
+{
+
+    "idmenu" : 2,
+    "idkategori" : 1,
+    "menu" : "Ayam Hainan",
+    "harga" : 2000,
+    "warna" : ["Putih", "Coklat"],
+    "stok" : false,
+    "keterangan" : null
+
+},
+{
+    "idmenu" : 2,
+    "idkategori" : 1,
+    "menu" : "Ujang Kedu",
+    "harga" : 2000,
+    "warna" : ["merah", "kuning"],
+    "stok" : false,
+    "keterangan" : null
+
+}
+
+]
