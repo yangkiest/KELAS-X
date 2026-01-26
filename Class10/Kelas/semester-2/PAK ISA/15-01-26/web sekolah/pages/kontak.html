@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak - SMPN 23 Depok</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+        nav {
+            background-color: #0a5ca8;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #0a5ca8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #083d6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="prestasi.html">Prestasi</a>
+    <a href="kontak.html">Kontak</a>
+</nav>
+
+<section>
+    <div class="box">
+        <h1>Hubungi Kami</h1>
+
+        <form action="mailto:smpn23depok@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="nama" placeholder="Nama" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="pesan" rows="5" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 SMP Negeri 23 Depok</p>
+</footer>
+
+</body>
+</html>

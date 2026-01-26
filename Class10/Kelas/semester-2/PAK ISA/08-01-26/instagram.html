@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instapict</title>
+
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#000;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      color:#e4e6eb;
+    }
+
+    /* ===== MAIN ===== */
+    .container{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:80px;
+      padding:40px;
+    }
+
+    /* ===== LEFT INFO ===== */
+    .info{
+      max-width:380px;
+    }
+
+    .info h1{
+      font-size:48px;
+      font-weight:700;
+      background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-bottom:16px;
+    }
+
+    .info p{
+      font-size:18px;
+      line-height:1.5;
+      color:#b0b3b8;
+    }
+
+    /* ===== LOGIN CARD ===== */
+    .login-wrapper{
+      width:350px;
+    }
+
+    .login-card{
+      background:#121212;
+      border:1px solid #262626;
+      padding:28px 26px;
+      border-radius:4px;
+    }
+
+    .login-card form{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .login-card input{
+      padding:10px;
+      font-size:14px;
+      border:1px solid #262626;
+      border-radius:3px;
+      background:#1c1c1c;
+      color:#e4e6eb;
+    }
+
+    .login-card input::placeholder{
+      color:#8e8e8e;
+    }
+
+    .login-card input:focus{
+      outline:none;
+      border-color:#444;
+    }
+
+    .login-btn{
+      margin-top:8px;
+      background:#0095f6;
+      color:white;
+      border:none;
+      padding:8px;
+      border-radius:4px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    .login-btn:hover{
+      background:#1da1f2;
+    }
+
+    /* ===== DIVIDER ===== */
+    .or{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin:18px 0;
+      font-size:13px;
+      color:#8e8e8e;
+    }
+
+    .or::before,
+    .or::after{
+      content:"";
+      flex:1;
+      height:1px;
+      background:#262626;
+    }
+
+    /* ===== LINKS ===== */
+    .login-fb{
+      text-align:center;
+      font-size:14px;
+      margin-bottom:12px;
+    }
+
+    .login-fb a{
+      text-decoration:none;
+      color:#3797f0;
+      font-weight:bold;
+    }
+
+    .forgot{
+      text-align:center;
+      font-size:12px;
+    }
+
+    .forgot a{
+      text-decoration:none;
+      color:#9cb4ff;
+    }
+
+    /* ===== REGISTER ===== */
+    .register{
+      border:1px solid #262626;
+      padding:18px;
+      text-align:center;
+      margin-top:12px;
+      background:#121212;
+      color:#e4e6eb;
+    }
+
+    .register a{
+      text-decoration:none;
+      color:#0095f6;
+      font-weight:bold;
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      text-align:center;
+      font-size:12px;
+      color:#8e8e8e;
+      padding:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container">
+    <!-- KIRI -->
+    <div class="info">
+      <h1>Instapict</h1>
+      <p>
+        Bagikan momen terbaikmu dan lihat cerita dari
+        orang-orang di seluruh dunia.
+      </p>
+    </div>
+
+    <!-- KANAN -->
+    <div class="login-wrapper">
+      <div class="login-card">
+        <form>
+          <input type="text" placeholder="Email, username, atau nomor">
+          <input type="password" placeholder="Kata sandi">
+          <button class="login-btn">Masuk</button>
+        </form>
+
+        <div class="or">ATAU</div>
+
+        <div class="login-fb">
+          <a href="#">Masuk dengan Facebook</a>
+        </div>
+
+        <div class="forgot">
+          <a href="#">Lupa kata sandi?</a>
+        </div>
+      </div>
+
+      <div class="register">
+        Belum punya akun?
+        <a href="#">Daftar</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Instapict • Dibuat oleh Cinta</p>
+  </footer>
+
+</body>
+</html>

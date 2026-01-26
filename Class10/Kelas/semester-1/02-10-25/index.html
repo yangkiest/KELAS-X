@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Catur 3x3</title>
+    <style>
+        .container {
+        width: 150px; 
+        height: 150px;
+        border: 2px solid black;
+        position: relative;
+      }
+      .Kotak {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+      }
+        .Hitam{
+            background-color: black;
+        }
+
+        .Putih{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+        <!-- Baris 1 -->
+         <div class="Kotak Hitam" style="top: 0px; left: 0px;"></div>
+         <div class="Kotak Putih" style="top: 0px; left: 50px;"></div>
+         <div class="Kotak Hitam" style="top: 0px; left: 100px;"></div>
+    </div>
+
+    <div>
+        <!-- Baris 2 -->
+         <div class="Kotak Putih" style="top: 50px; left: 0px;"></div>
+         <div class="Kotak Hitam" style="top: 50px; left: 50px;"></div>
+         <div class="Kotak Putih" style="top: 50px; left: 100px;"></div>
+    </div>
+
+    <div>
+        <!-- Baris 3 -->
+         <div class="Kotak Hitam" style="top: 100px; left: 0px;"></div>
+         <div class="Kotak Putih" style="top: 100px; left: 50px;"></div>
+         <div class="Kotak Hitam" style="top: 100px; left: 100px;"></div>
+    </div>
+
+    </div>
+</body>
+</html>

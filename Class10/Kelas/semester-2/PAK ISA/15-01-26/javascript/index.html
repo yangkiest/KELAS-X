@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1 id="judul"></h1>
+    <p id="isi"></p>
+    <input type="number" id="bill1" value="4">
+    <input type="number" id="bill2" value="3">
+    <button onclick="hitung()">hitung</button>
+
+    <h1 id="zodiakanda">Zodiak Anda</h1>
+    <input type="number" id="bulan" placeholder="bulan">
+    <input type="number" id="tanggal" placeholder="tanggal">
+    <button onclick="zodiak()">cek zodiak</button>
+
+    <h1 id="nilaianda">nilai anda</h1>
+    <input type="number" id="nilai" placeholder="nilai">
+    <button onclick="nilai()">nilai</button>
+
+    <script>
+        function hitung(){
+            let hasil = document.getElementById("judul");
+            let bill1 = document.getElementById("bill1").value;
+            let bill2 = document.getElementById("bill2").value;
+            hasil = parseInt(bill1) + parseInt(bill2);
+            document.getElementById("judul").innerHTML = hasil;
+        }
+
+        function zodiak(){
+           let bulan = parseInt(document.getElementById("bulan").value);
+           let tanggal = parseInt(document.getElementById("tanggal").value);
+           let zodiakanda = document.getElementById("zodiakanda");
+
+           if (bulan < 1 || bulan > 12) {
+               alert("Bulan tidak valid");
+           } else if (tanggal < 1 || tanggal > 31) {
+               alert ("Tanggal tidak valid");
+           }else {
+               if ((bulan == 1 && tanggal >= 20) || (bulan == 2 && tanggal <= 18)) {
+                   zodiakanda.innerHTML = "Aquarius";
+               } else if ((bulan == 2 && tanggal >= 19) || (bulan == 3 && tanggal <= 20)) {
+                   zodiakanda.innerHTML = "Pisces";
+               } else if ((bulan == 3 && tanggal >= 21) || (bulan == 4 && tanggal <= 19)) {
+                   zodiakanda.innerHTML = "Aries";
+               } else if ((bulan == 4 && tanggal >= 20) || (bulan == 5 && tanggal <= 20)) {
+                   zodiakanda.innerHTML = "Taurus";
+               } else if ((bulan == 5 && tanggal >= 21) || (bulan == 6 && tanggal <= 20)) {
+                   zodiakanda.innerHTML = "Gemini";
+               } else if ((bulan == 6 && tanggal >= 21) || (bulan == 7 && tanggal <= 22)) {
+                   zodiakanda.innerHTML = "Cancer";
+               } else if ((bulan == 7 && tanggal >= 23) || (bulan == 8 && tanggal <= 22)) {
+                   zodiakanda.innerHTML = "Leo";
+               } else if ((bulan == 8 && tanggal >= 23) || (bulan == 9 && tanggal <= 22)) {
+                   zodiakanda.innerHTML = "Virgo";
+               } else if ((bulan == 9 && tanggal >= 23) || (bulan == 10 && tanggal <= 22)) {
+                   zodiakanda.innerHTML = "Libra";
+               } else if ((bulan == 10 && tanggal >= 23) || (bulan == 11 && tanggal <= 21)) {
+                   zodiakanda.innerHTML = "Scorpio";
+               } else if ((bulan == 11 && tanggal >= 22) || (bulan == 12 && tanggal <= 21)) {
+                   zodiakanda.innerHTML = "Sagittarius";
+               } else if ((bulan == 12 && tanggal >= 22) || (bulan == 1 && tanggal <= 19)) {
+                   zodiakanda.innerHTML = "Capricorn";
+               }
+           }
+        }
+
+
+        function nilai(){
+            let nilai = parseInt(document.getElementById("nilai").value);
+            let nilaianda = document.getElementById("nilaianda");
+
+            if (nilai >= 90 && nilai <= 100) {
+                nilaianda.innerHTML = "Nilai Anda A";
+            } else if (nilai >= 70 && nilai <= 89) {
+                nilaianda.innerHTML = "Nilai Anda B";
+            } else if (nilai >= 60 && nilai <= 69) {
+                nilaianda.innerHTML = "Nilai Anda C";
+            } else if (nilai >= 50 && nilai <= 59) {
+                nilaianda.innerHTML = "Nilai Anda D";
+            } else if (nilai < 50) {
+                nilaianda.innerHTML = "Nilai Anda E";
+            } else {
+                alert("Nilai tidak valid");
+            }
+        }
+        
+    </script>
+
+    <!-- buatlah tugas konvers nilai jika 90 - 100 , nilainya A
+    jika 70 - 89 , nilainya B
+    jika 60 - 69 , nilainya C
+    jika 50 - 59 , nilainya D
+    < 50 , nilainya E -->
+</body>
+</html>

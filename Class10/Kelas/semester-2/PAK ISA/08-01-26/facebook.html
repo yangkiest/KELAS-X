@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facehub</title>
+
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:white;
+      color:black;
+    }
+
+    /* ===== LAYOUT ===== */
+    .wrapper{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      padding: 40px;
+    }
+
+    /* ===== LEFT INFO ===== */
+    .brand{
+      max-width: 480px;
+    }
+
+    .brand h1{
+      color:#2784ff;
+      font-size: 72px;
+      margin-bottom: 12px;
+    }
+
+    .brand p{
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    /* ===== LOGIN CARD ===== */
+    .login-box{
+      width: 380px;
+    }
+
+    .card{
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .card form{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .card input{
+      padding: 14px;
+      font-size: 16px;
+      border: 1px solid #e5e9ee;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .card input:focus{
+      border-color:#1877f2;
+    }
+
+    .login-btn{
+      background:#1877f2;
+      color:white;
+      border:none;
+      padding: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover{
+      background:#166fe5;
+    }
+
+    .forgot{
+      text-align: center;
+      margin: 14px 0;
+    }
+
+    .forgot a{
+      text-decoration: none;
+      color:#1877f2;
+      font-size: 14px;
+    }
+
+    .divider{
+      border-top:1px solid #dadde1;
+      margin: 20px 0;
+    }
+
+    .register{
+      text-align: center;
+    }
+
+    .register button{
+      background:#42b72a;
+      color:white;
+      border:none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .caption{
+      text-align: center;
+      margin-top: 22px;
+      font-size: 14px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      text-align: center;
+      font-size: 13px;
+      color:#606770;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="wrapper">
+    <!-- KIRI -->
+    <div class="brand">
+      <h1>Facehub</h1>
+      <p>
+        Terhubung dan berbagi cerita dengan orang-orang penting
+        dalam hidupmu, kapan saja dan di mana saja.
+      </p>
+    </div>
+
+    <!-- KANAN -->
+    <div class="login-box">
+      <div class="card">
+        <form>
+          <input type="text" placeholder="Email atau nomor telepon">
+          <input type="password" placeholder="Kata sandi">
+          <button class="login-btn">Masuk</button>
+        </form>
+
+        <div class="forgot">
+          <a href="#">Tidak bisa masuk?</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="register">
+          <button>Daftar Sekarang</button>
+        </div>
+      </div>
+
+      <div class="caption">
+        <strong>Buat Halaman</strong> untuk bisnis atau komunitasmu
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Facehub • Dibuat oleh Cinta</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopee Clone</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+}
+
+/* ===== TOP BAR ===== */
+.top-info{
+  background:#ff5722;
+  color:white;
+  font-size:13px;
+  padding:6px 60px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.top-info a{
+  color:white;
+  text-decoration:none;
+  margin-right:15px;
+}
+
+/* ===== HEADER ===== */
+.header{
+  background:#ff5722;
+  padding:15px 60px 25px;
+}
+
+.header-row{
+  display:grid;
+  grid-template-columns:200px 1fr 80px;
+  align-items:center;
+  gap:20px;
+}
+
+.logo{
+  font-size:34px;
+  font-weight:bold;
+  color:white;
+}
+
+/* SEARCH */
+.search-box{
+  background:white;
+  display:flex;
+  border-radius:3px;
+  overflow:hidden;
+}
+
+.search-box input{
+  flex:1;
+  border:none;
+  padding:10px 12px;
+  outline:none;
+}
+
+.search-box button{
+  background:#fb5533;
+  border:none;
+  color:white;
+  padding:0 22px;
+  cursor:pointer;
+}
+
+.cart{
+  color:white;
+  font-size:26px;
+  text-align:center;
+}
+
+/* KEYWORDS */
+.keyword{
+  margin-top:8px;
+  font-size:12px;
+}
+
+.keyword span{
+  color:#ffe6d9;
+  margin-right:12px;
+}
+
+/* ===== BANNER ===== */
+.banner-wrap{
+  max-width:1200px;
+  margin:20px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:10px;
+}
+
+.banner-main{
+  background:linear-gradient(135deg,#ff7043,#ff9800);
+  height:250px;
+  border-radius:6px;
+  color:white;
+  padding:30px;
+}
+
+.banner-main h2{
+  font-size:30px;
+}
+
+.banner-side{
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:10px;
+}
+
+.side-box{
+  background:#fff;
+  border-radius:6px;
+  padding:20px;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ff5722;
+}
+
+/* ===== CATEGORY ===== */
+.category-wrap{
+  max-width:1200px;
+  margin:20px auto 40px;
+  padding:0 20px;
+  background:white;
+}
+
+.category-title{
+  padding:15px;
+  font-weight:bold;
+  border-bottom:1px solid #eee;
+}
+
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(10,1fr);
+}
+
+.cat{
+  padding:15px 5px;
+  text-align:center;
+  border-right:1px solid #eee;
+  border-bottom:1px solid #eee;
+  cursor:pointer;
+}
+
+.cat:hover{
+  background:#fafafa;
+}
+
+.cat img{
+  width:45px;
+  margin-bottom:8px;
+}
+
+.cat p{
+  font-size:12px;
+}
+
+.side-box{
+  background:#fff;
+  border-radius:6px;
+  padding:20px;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ff5722;
+  cursor:pointer;
+  transition:all 0.25s ease;
+}
+
+/* === SHOPEE MALL HOVER === */
+.side-box.mall:hover{
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  color:white;
+  transform:translateY(-4px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.18);
+}
+
+/* === FLASH SALE HOVER === */
+.side-box.flash:hover{
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  color:white;
+  transform:scale(1.05);
+  box-shadow:0 8px 18px rgba(0,0,0,0.18);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP INFO -->
+<div class="top-info">
+  <div>
+    <a href="#">Seller Centre</a>
+    <a href="#">Mulai Jual</a>
+    <a href="#">Download</a>
+  </div>
+  <div>
+    <a href="#">Notifikasi</a>
+    <a href="#">Bantuan</a>
+    <a href="#">Login</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-row">
+    <div class="logo">Shopee</div>
+
+    <div>
+      <div class="search-box">
+        <input type="text" placeholder="Cari di Shopee">
+        <button>🔍</button>
+      </div>
+      <div class="keyword">
+        <span>Sepatu</span>
+        <span>iPhone</span>
+        <span>Flash Sale</span>
+        <span>Tas Wanita</span>
+      </div>
+    </div>
+
+    <div class="cart">🛒</div>
+  </div>
+</div>
+
+<!-- BANNER -->
+<section class="banner-wrap">
+  <div class="banner-main">
+    <h2>Gratis Ongkir XTRA</h2>
+    <p>Tanpa minimum belanja</p>
+  </div>
+
+  <div class="banner-side">
+  <div class="side-box mall">Shopee Mall</div>
+  <div class="side-box flash">Flash Sale</div>
+</div>
+</section>
+
+<!-- CATEGORY -->
+<section class="category-wrap">
+  <div class="category-title">Kategori</div>
+  <div class="category-grid">
+    <div class="cat"><img src="img/keranjang.jpg"><p>Gratis Ongkir</p></div>
+    <div class="cat"><img src="img/voucher.jpg"><p>Voucher</p></div>
+    <div class="cat"><img src="img/komputer.jpg"><p>Elektronik</p></div>
+    <div class="cat"><img src="img/baju.jpg"><p>Fashion</p></div>
+    <div class="cat"><img src="img/hp.jpg"><p>HP & Aksesoris</p></div>
+    <div class="cat"><img src="img/rumah.jpg"><p>Rumah Tangga</p></div>
+    <div class="cat"><img src="img/piring.jpg"><p>Makanan</p></div>
+    <div class="cat"><img src="img/makeup.jpg"><p>Kecantikan</p></div>
+    <div class="cat"><img src="img/olahraga.jpg"><p>Olahraga</p></div>
+    <div class="cat"><img src="img/tandapanah.jpg"><p>Lainnya</p></div>
+  </div>
+</section>
+
+<footer>
+    <p>© 2026 supi • Dibuat oleh Cinta</p>
+  </footer>
+
+</body>
+</html>
