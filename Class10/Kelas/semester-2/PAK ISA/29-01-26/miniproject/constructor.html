@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor Function</title>
+  </head>
+  <body>
+
+<!-- MIni Project 1 -->
+<button onclick="buat()">Buat Siswa</button>
+<p id="hasil"></p>
+
+    <script>
+      function Siswa(nama, kelas) {
+        this.nama = nama;
+        this.kelas = kelas;
+      }
+
+      function buat() {
+        let s = new Siswa("Andaru", "X-RPL");
+        hasil.innerHTML = "Nama : " + s.nama + "<br> Kelas : " + s.kelas;
+      }
+    </script>
+
+<!-- Mini Project 2 -->
+<button onclick="buat()">buat Produk</button>
+<p id="hasil"></p>
+
+    <script>
+      function Produk(nama, harga) {
+        this.nama = nama;
+        this.harga = harga;
+      }
+
+      function buat() {
+        let p = new Produk("pensil", "2000");
+        hasil.innerHTML = "Produk : " + p.nama + "<br> Harga : " + p.harga;
+      }
+    </script>
+
+<!-- Mini Project 3 -->
+<button onclick="buat()">Mobil</button>
+<p id="hasil"></p>
+
+    <script>
+      function Mobil(merk, warna) {
+        this.merk = merk;
+        this.warna = warna;
+      }
+
+      function buat() {
+        let m = new Mobil("Mclaren", "Hijau");
+        hasil.innerHTML = m.merk + " " + m.warna;
+      }
+    </script>
+
+<!-- Mini Project 4 -->
+<button onclick="buat()">User</button>
+<p id="hasil"></p>
+
+    <script>
+      function User(username, password) {
+        this.username = username;
+        this.password = password;
+      }
+
+      function buat() {
+        let u = new User("admin", "123");
+        hasil.innerHTML =
+          "Username :  " + u.username + "<br> Password : " + u.password;
+      }
+    </script>
+
+<!-- Mini Project 5 -->
+ <button onclick="buat()">User</button>
+    <p id="hasil"></p>
+
+    <script>
+      function User(username, password) {
+        this.username = username;
+        this.password = password;
+      }
+
+      function buat() {
+        let u = new User("admin", "123");
+        hasil.innerHTML =
+          "Username :  " + u.username + "<br> Password : " + u.password;
+      }
+    </script>
+    
+  </body>
+</html>

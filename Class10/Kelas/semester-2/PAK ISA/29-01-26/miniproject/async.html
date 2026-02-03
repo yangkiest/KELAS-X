@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Function</title>
+</head>
+<body>
+<!-- Mini Project 1 -->
+<button onclick="pesan()">Pesan</button>
+    <script>
+      async function pesan() {
+        await new promise((r) => setTimeout(r, 1000));
+        alert("selesai");
+      }
+    </script>
+
+<!-- Mini Project 2 -->
+<button onclick="load()">Load</button>
+<p id="hasil"></p>
+
+    <script>
+      async function load() {
+        hasil.innerHTML = "Loading. . . . ";
+        await new Promise((r) => setTimeout(r, 2000));
+        hasil.innerHTML = "Data Tampil";
+      }
+    </script>
+
+<!-- Mini Project 3 -->
+<button onclick="ambil()">Ambil Data</button>
+<p id="hasil"></p>
+
+    <script>
+      async function ambil() {
+        let data = "User = Andi";
+        await new Promise((r) => setTimeout(r, 1000));
+        hasil.innerHTML = data;
+      }
+    </script>
+
+<!-- Mini Project 4 -->
+<button onclick="hitung()">Hitung</button>
+<p id="hasil"></p>
+
+    <script>
+      async function hitung() {
+        await new Promise((r) => setTimeout(r, 1000));
+        hasil.innerHTML = 5 + 5;
+      }
+    </script>
+
+<!-- Mini Project 5 -->
+<button onclick="proses()">Proses</button>
+<p id="hasil"></p>
+
+    <script>
+      async function proses() {
+        hasil.innerHTML = "Step 1";
+        await new Promise((r) => setTTimeout(r, 1000));
+        hasil.innerHTML = "Step 2";
+      }
+    </script>
+</body>
+</html>

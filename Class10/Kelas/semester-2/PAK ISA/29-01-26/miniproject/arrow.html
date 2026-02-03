@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+<!-- Mini Project 1 -->
+<input id="n" />
+<button onclick="kuadrat()">Kuadrat</button>
+<p id="hasil"></p>
+
+    <script>
+      const kuadrat = () => (hasil.innerHTML = n.value * n.value);
+    </script>
+
+<!-- Mini Project 2 -->
+<input id="harga" />
+<button onclick="pajak()">Pajak</button>
+<p id="hasil"></p>
+
+    <script>
+      const pajak = () => (hasil.innerHTML = harga.value * 0.1);
+    </script>
+
+<!-- Mini Project 3 -->
+<input id="a" /><input id="b" />
+<button onclick="jumlah()">Jumlah</button>
+<p id="hasil"></p>
+
+    <script>
+      const jumlah = () =>
+        (hasil.innerHTML = Number(a.value) + Number(b.value));
+    </script>
+
+<!-- Mini Project 4 -->
+<input id="usia" />
+<button onclick="cek()">Cek Usia</button>
+<p id="hasil"></p>
+
+    <script>
+      const cek = () =>
+        (hasil.innerHTML = usia.value >= 17 ? "Dewasa" : "Anak-anak");
+    </script>
+
+<!-- Mini Project 5 -->
+<button onclick="hello()">hello</button>
+<p id="hasil"></p>
+
+    <script>
+      const hello = () => (hasil.innerHTML = "Hello World");
+    </script>
+</body>
+</html>

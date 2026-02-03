@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE</title>
+</head>
+<body>
+<!-- Mini Project 1 -->
+    <script>
+      (function () {
+        alert("Ini IIFE, wellcome to app");
+      })();
+    </script>
+
+<!-- Mini Project 2 -->
+    <script>
+      (function () {
+        document.body.innerHTML = "Aplikasi Dimulai";
+      })();
+    </script>
+
+<!-- Mini Project 3 -->
+    <script>
+      (function () {
+        let r = Math.floor(Math.random() * 100);
+        alert("Angka Random :  " + r);
+      })();
+    </script>
+
+<!-- Mini Project 4 -->
+    <script>
+      (function () {
+        let login = true;
+        alert(login ? "Sudah Login" : "Belum Login");
+      })();
+    </script>
+
+<!-- Mini Project 5 -->
+    <script>
+      (function () {
+        let tahun = new Date().getFullYear();
+        alert("Tahun: " + tahun);
+      })();
+    </script>
+</body>
+</html>

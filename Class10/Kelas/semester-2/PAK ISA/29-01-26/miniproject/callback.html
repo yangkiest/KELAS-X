@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+<body>
+<!-- Mini Project 1 -->
+<input id="a" /><input id="b" />
+<button onclick="hitung()">Tambah</button>
+<p id="hasil"></p>
+
+    <script>
+      function proses(x, y, cb) {
+        cb(x, y);
+      }
+      function hitung() {
+        proses(Number(a.value), Number(b.value), function (x, y) {
+          hasil.innerHTML = x + y;
+        });
+      }
+    </script>
+
+<!-- Mini Project 2 -->
+    <script>
+      setTimeout(function () {
+        alert("callback selesai");
+      }, 1000);
+    </script>
+
+<!-- Mini Project 3 -->
+<input id="n" />
+<button onclick="cek()">Validasi</button>
+<p id="hasil"></p>
+
+    <script>
+      function validasi(x, cb) {
+        if (x > 0) cb("Valid");
+        else cb("Tidak Valid");
+      }
+
+      function cek() {
+        validasi(n.value, function (msg) {
+          hasil.innerHTML;
+        });
+      }
+    </script>
+
+<!-- Mini Project 4 -->
+    <script>
+      function nilai(x, cb) {
+        cb(x >= 75 ? "Lulus" : "Tidak Lulus");
+      }
+      nilai(80, function (r) {
+        console.log(r);
+      });
+    </script>
+
+<!-- Mini Project 5 -->
+    <script>
+      [2, 4, 6].map(function (n) {
+        console.log(n * 2);
+      });
+    </script>
+</body>
+</html>

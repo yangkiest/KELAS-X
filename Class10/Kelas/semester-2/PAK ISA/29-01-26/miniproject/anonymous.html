@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function</title>
+</head>
+<body>
+<!-- Mini Project 1 -->
+<button id="hasil">Klik</button>
+
+    <script>
+      let c = 0;
+      hasil.onclick = function () {
+        c++;
+        hasil.innerHTML = c;
+      };
+    </script>
+
+<!-- Mini Project 2 -->
+    <script>
+      setTimeout(function () {
+        alert("Selesai");
+      }, 3000);
+    </script>
+
+<!-- Mini Project 3 -->
+    <script>
+      document.onclick = function () {
+        console.log("Mouse di klik");
+      };
+    </script>
+
+<!-- Mini Project 4 -->
+    <script>
+      [1, 2, 3, 4].forEach(function (n) {
+        console.log(n);
+      });
+    </script>
+
+<!-- Mini Project 5 -->
+    <script>
+      (function () {
+        alert("Hello World and Welcome");
+      })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expression Function</title>
+  </head>
+  <body>
+<!-- Mini Project 1 -->
+<input id="n" />
+<button onclick="cek()">Cek Genap</button>
+<p id="hasil"></p>
+
+    <script>
+      const cek = function () {
+        hasil.innerHTML = n.value % 2 == 0 ? "Genap" : "Ganjil";
+      };
+    </script>
+
+<!-- Mini Project 2 -->
+<input id="p" /><input id="l" />
+<button onclick="luas()">Luas</button>
+<p id="hasil"></p>
+
+    <script>
+      const luas = function () {
+        hasil.innerHTML = p.value * l.value;
+      };
+    </script>
+
+<!-- Mini Project 3 -->
+<input id="rupiah" />
+<button onclick="konversi()">Dollar</button>
+<p id="hasil"></p>
+
+    <script>
+      const konversi = function () {
+        hasil.innerHTML = rupiah.value / 16.788 + " $";
+      };
+    </script>
+
+<!-- Mini Project 4 -->
+<input id="nama" />
+<button onclick="sapa()">Sapa</button>
+<p id="hasil"></p>
+
+    <script>
+      const sapa = function () {
+        hasil.innerHTML = "haloo " + nama.value;
+      };
+    </script>
+
+<!-- Mini Project 5 -->
+<input id="nilai" />
+<button onclick="grade()">Grade</button>
+<p id="hasil"></p>
+
+    <script>
+      const grade = function () {
+        let n = nilai.value;
+        if (n >= 85) hasil.innerHTML = "A";
+        else if (n >= 75) hasil.innerHTML = "B";
+        else hasil.innerHTML = "C";
+      };
+    </script>
+  </body>
+</html>

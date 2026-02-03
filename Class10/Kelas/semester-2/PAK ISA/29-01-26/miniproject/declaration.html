@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaration Function</title>
+</head>
+<body>
+    <!-- Mini Project 1 -->
+<h3>Kalkulator</h3>
+    <input id="a" /><input id="b" />
+    <button onclick="tambah()">Tambah</button>
+    <p id="hasil"></p>
+
+    <script>
+      function tambah() {
+        let a = Number(a.value);
+        let b = Number(b.value);
+
+        hasil.innerHTML = a + b;
+      }
+    </script>
+
+<!-- Mini Project 2 -->
+<input id="nilai" />
+    <button onclick="cek()">Cek</button>
+
+    <script>
+      function cek() {
+        hasil.innerHTML = nilai.value >= 75 ? "Lulus" : "Tidak Lulus";
+      }
+    </script>
+
+<!-- Mini Project 3 -->
+<input id="c" />
+    <button onclick="konversi()">Konversi</button>
+    <p id="hasil"></p>
+    <script>
+      function konversi() {
+        hasil.innerHTML = (c.value * 9) / 5 + 32 + " °F";
+      }
+    </script>
+
+<!-- Mini Project 4 -->
+ <input id="tahun" />
+    <button onclick="umur()">Hitung Umur</button>
+    <p id="hasil"></p>
+
+    <script>
+      function umur() {
+        hasil.innerHTML = 2026 - tahun.value + " Tahun";
+      }
+    </script>
+
+<!-- Mini Project 5 -->
+<input id="harga" />
+    <button onclick="diskon()">Diskon</button>
+    <p id="hasil"></p>
+    <script>
+      function diskon() {
+        hasil.innerHTML = harga.value * 0.1;
+      }
+    </script>
+</body>
+</html>
