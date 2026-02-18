@@ -18,6 +18,7 @@ public class belajarinputoutput {
         double uang = inputUser.nextDouble();
         System.out.println("Uang sakuku adalah Rp. " + uang);
 
+        // buang ENTER sisa dari nextDouble
         inputUser.nextLine();
 
         System.out.print("Karakter apa yang anda suka: ");

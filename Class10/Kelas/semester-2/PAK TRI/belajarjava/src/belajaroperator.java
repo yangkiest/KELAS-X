@@ -1,7 +1,7 @@
 public class belajaroperator {
 
     public static void main(String[] args) {
-       int a=10;
+        int a=10;
     int b=3;
     
     int penjumlahan=a+b;
@@ -65,9 +65,6 @@ public class belajaroperator {
         System.out.println("operator logika-2 "+result2);
         System.out.println("operator logika-3 "+result3);
         System.out.println("operator logika-4 "+result4);
-        
-        
-        
         
     }
     

@@ -1,7 +1,7 @@
 public class belajarkonversi {
   
     public static void main(String[] args) {
-         System.out.println("belajar konversi data");
+        System.out.println("belajar konversi data");
         System.out.println("");
         
         String a= "25";
