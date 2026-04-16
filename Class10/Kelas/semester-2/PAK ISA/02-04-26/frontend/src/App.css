@@ -402,6 +402,22 @@ button:hover {
   margin-bottom: 24px;
 }
 
+.auth-form form {
+  display: grid;
+  gap: 18px;
+}
+
+.auth-form input,
+.auth-form textarea,
+.auth-form button {
+  margin: 0;
+}
+
+.auth-form input,
+.auth-form textarea {
+  width: 100%;
+}
+
 .auth-popup-overlay {
   min-height: calc(100vh - 90px);
   display: grid;
@@ -417,6 +433,21 @@ button:hover {
   border: 1px solid rgba(255, 55, 150, 0.18);
   box-shadow: 0 32px 90px rgba(0, 0, 0, 0.32);
   text-align: center;
+}
+
+.auth-popup .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.auth-popup .button-group .button {
+  min-width: 130px;
 }
 
 .auth-popup h2 {
